@@ -7,5 +7,5 @@ COPY --from=kustomize /app/kustomize /usr/local/bin/kustomize
 WORKDIR /
 USER nobody
 
-ENTRYPOINT ["/bin/bash"]
-CMD ["-c", "echo 'Hello World'"]
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD ["echo", "Hello World"]
